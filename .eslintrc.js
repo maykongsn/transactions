@@ -23,7 +23,7 @@ module.exports = {
           tsx: "never",
         },
       ],
-      "import/no-extraneous-dependencies": false,
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
       "prettier/prettier": [
         "error",
         {

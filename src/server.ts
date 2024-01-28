@@ -1,13 +1,13 @@
 import express from "express";
-import { knex } from "./database";
+import { env } from "./env";
+import routes from "./routes/transactions";
 
 const app = express();
 
-app.get("/hello", async () => {
-  const tables = await knex('sqlite_schema').select('*');
-  return tables;
-});
+app.use(express.json());
 
-app.listen(3333, () => {
+app.use(routes);
+
+app.listen(env.PORT, () => {
   console.log("Server running!");
 });
