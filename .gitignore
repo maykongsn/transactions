@@ -1,7 +1,8 @@
 node_modules
 
-database/app.db
-database/test.db
+src/database/app.db
+src/database/test.db
+coverage
 
 .env
 
