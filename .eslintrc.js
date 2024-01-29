@@ -23,7 +23,7 @@ module.exports = {
           tsx: "never",
         },
       ],
-      "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
       "@typescript-eslint/strict-boolean-expressions": 0,
       "@typescript-eslint/no-unsafe-argument": 0,
       "prettier/prettier": [

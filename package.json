@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsx watch src/server.ts",
     "lint": "eslint src -e .ts --fix",
-    "knex": "node --loader tsx ./node_modules/.bin/knex"
+    "knex": "node --loader tsx ./node_modules/.bin/knex",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,9 @@
   "devDependencies": {
     "@types/cookie-parser": "^1.4.6",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
     "@types/node": "^20.11.8",
+    "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -23,6 +26,10 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
